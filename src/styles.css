@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: rgb(245, 245, 245);
+    --button-color: rgb(0, 183, 255);
+    --button-border-color: rgb(0, 132, 255);
+}
+body {
+    font: 14px Arial, sans-serif;
+    background-color: var(--main-bg-color);
+}
