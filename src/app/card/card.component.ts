@@ -1,3 +1,4 @@
+//Component for home page to render post cards
 import {Component, Input} from '@angular/core';
 
 @Component({

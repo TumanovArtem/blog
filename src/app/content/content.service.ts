@@ -1,8 +1,3 @@
-//import { Injectable } from '@angular/core';
-//
-//@Injectable({
-//  providedIn: 'root'
-//})
 export class ContentService {
 
   content = [
@@ -19,10 +14,28 @@ export class ContentService {
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quaerat!",
     id: 4}
   ]
+
   public getPost(id: number) {
     return this.content.find(post => post.id == id );
   }
+
   public getAll() {
     return this.content;
+  }
+
+  public createPost() {
+    let id = this.content.length + 1;
+    this.content.push({title: "", content: "", id: id});
+    return id;
+  }
+
+  public savePost(content) {
+    if (content.title == "" ) content.title = "Пустой заголовок";
+    this.content.map(post => {if (post.id == content.id) post = content });
+  }
+
+  public deletePost(id) {
+    const index = this.content.findIndex((post, index) => post.id == id);
+    this.content.splice(index, 1);
   }
 }

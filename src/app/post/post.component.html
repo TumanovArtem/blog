@@ -5,8 +5,8 @@
         <form action="#">
             <input type="text" [formControl]="titleControl">
             <textarea name="" id="" cols="30" rows="10" [formControl]="contentControl"></textarea>
-            <button class="delete">Удалить</button>
-            <button class="save">Сохранить</button>
+            <button class="delete" (click)="deletePost()">Удалить</button>
+            <button class="save" (click)="savePost()">Сохранить</button>
         </form>
     </div>
 </router-outlet>

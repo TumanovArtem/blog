@@ -12,7 +12,6 @@ button {
     padding: 5px 10px;
     margin: 20px 0;
     border-radius: 5px;
-    cursor: pointer;
 }
 .delete {
     background-color: var(--warning-color);
