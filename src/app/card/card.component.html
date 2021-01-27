@@ -1,5 +1,5 @@
-<h2>Title</h2>
+<h2>{{ title }}</h2>
 <div class="content">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quaerat!</p>
+    <p>{{ content }}</p>
 </div>
-<button>Перейти</button>
+<button [routerLink]="['post', id]">Перейти</button>

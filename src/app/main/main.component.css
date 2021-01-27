@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+app-card {
+    width: 280px;
+    height: 250px;
+    margin: 20px;
+}
+
+.add {
+    float: right;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    border: 1px solid var(--button-border-color);
+}

@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Блог</h1>
+    <div class="posts">
+      <app-card 
+      *ngFor="let post of content" 
+      [(title)]="post.title" 
+      [(content)]="post.content" 
+      [id]="post.id"
+      [clickButton]="showModalWindow"
+      ></app-card>
+    </div>
+    <button class="add">+Добавить</button>
+</div>
