@@ -9,8 +9,14 @@
     --main-bg-color: rgb(245, 245, 245);
     --button-color: rgb(0, 183, 255);
     --button-border-color: rgb(0, 132, 255, 0.8);
+    --warning-color: rgb(255, 55, 55);
 }
 body {
     font: 14px Arial, sans-serif;
     background-color: var(--main-bg-color);
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
 }

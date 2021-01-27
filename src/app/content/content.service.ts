@@ -19,7 +19,9 @@ export class ContentService {
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quaerat!",
     id: 4}
   ]
-
+  public getPost(id: number) {
+    return this.content.find(post => post.id == id );
+  }
   public getAll() {
     return this.content;
   }

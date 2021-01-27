@@ -7,6 +7,7 @@ import {CardComponent} from './card/card.component';
 import { ContentService } from './content/content.service';
 import { PostComponent } from './post/post.component';
 import { MainComponent } from './main/main.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,7 +19,9 @@ import { MainComponent } from './main/main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ ContentService ],
   bootstrap: [AppComponent]

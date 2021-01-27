@@ -1,0 +1,23 @@
+input, textarea {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+input, textarea {
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete {
+    background-color: var(--warning-color);
+}
+
+.save {
+    float: right;
+}
